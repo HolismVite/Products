@@ -1,5 +1,5 @@
 import CollectionsIcon from '@mui/icons-material/Collections'
-import { List, Text, Enum, ItemAction } from '@List'
+import { List, Text, Enum, EntityAction } from '@List'
 import UpsertProduct from './Upsert'
 
 const filters = <>
@@ -20,9 +20,9 @@ const card = (item) => {
     </div>
 }
 
-const itemActions = (item) => {
+const entityActions = (item) => {
     return <>
-        <ItemAction
+        <EntityAction
             title='Manage images'
             icon={CollectionsIcon}
             goTo={`/product/images?productId=${item.id}`}
@@ -36,7 +36,7 @@ const Products = () => {
         entityType='Product'
         filters={filters}
         card={card}
-        itemActions={itemActions}
+        entityActions={entityActions}
         upsert={UpsertProduct}
         hasDelete={true}
         hasEdit={true}

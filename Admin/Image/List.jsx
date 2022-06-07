@@ -1,4 +1,4 @@
-import { List, ItemAction } from '@List'
+import { List, EntityAction } from '@List'
 import UploadImage from './Upload'
 
 const card = (item) => <>
