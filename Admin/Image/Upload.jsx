@@ -1,4 +1,4 @@
-import { Form, Upload } from '@Form'
+import { DialogForm, Upload } from '@Form'
 
 const inputs = <>
     <Upload
@@ -9,7 +9,7 @@ const inputs = <>
 </>
 
 const UploadImage = () => {
-    return <Form
+    return <DialogForm
         title='Upload image'
         entityType='ProductImage'
         inputs={inputs}
