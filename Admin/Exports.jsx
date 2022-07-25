@@ -19,12 +19,16 @@ const ProductsMenu = [
         icon: ShoppingCartIcon,
         children: [
             {
+                title: 'Products',
+                url: '/products'
+            },
+            {
                 title: 'Brands',
                 url: '/brands'
             },
             {
-                title: 'Products',
-                url: '/products'
+                title: 'Categories',
+                url: '/hierarchies?entityType=product'
             }
         ]
     }
