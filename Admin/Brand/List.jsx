@@ -2,6 +2,7 @@ import {
     List,
     Text,
     Image,
+    SvgProperty,
 } from '@List'
 
 const filters = <>
@@ -25,6 +26,12 @@ const row = (entity) => <>
         />
     </td>
     <td>{entity.name}</td>
+    <td>
+        <SvgProperty
+            value={entity.logoSvg}
+            actionUrl={`/brand/setSvg?id=${entity.id}`}
+        />
+    </td>
 </>
 
 const Brands = () => {
